@@ -13,9 +13,22 @@
 		88D18CB5267CE1670042A20A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D18CB3267CE1670042A20A /* Main.storyboard */; };
 		88D18CB7267CE1680042A20A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D18CB6267CE1680042A20A /* Assets.xcassets */; };
 		88D18CBA267CE1680042A20A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D18CB8267CE1680042A20A /* LaunchScreen.storyboard */; };
+		88D18CC2267CE7B60042A20A /* PoemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CC1267CE7B60042A20A /* PoemsViewController.swift */; };
+		88D18CC4267CE7CD0042A20A /* StoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CC3267CE7CD0042A20A /* StoriesViewController.swift */; };
+		88D18CC8267CE88A0042A20A /* PerformancesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CC7267CE88A0042A20A /* PerformancesViewController.swift */; };
+		88D18CCF267CE93B0042A20A /* PoemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CCA267CE93B0042A20A /* PoemView.swift */; };
+		88D18CD0267CE93B0042A20A /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CCB267CE93B0042A20A /* StoriesView.swift */; };
+		88D18CD1267CE93B0042A20A /* PoemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CCC267CE93B0042A20A /* PoemsView.swift */; };
+		88D18CD2267CE93B0042A20A /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CCD267CE93B0042A20A /* StoryView.swift */; };
+		88D18CD3267CE93B0042A20A /* PerformancesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CCE267CE93B0042A20A /* PerformancesView.swift */; };
+		88D18CD5267CE9530042A20A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88D18CD4267CE9520042A20A /* GoogleService-Info.plist */; };
+		D1E9E672AA5DCAD3B24ED6AB /* Pods_SeshatOrchidProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571D8634DA3B47D500580594 /* Pods_SeshatOrchidProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FA82E1B11B87406C8F98434 /* Pods-SeshatOrchidProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeshatOrchidProject.debug.xcconfig"; path = "Target Support Files/Pods-SeshatOrchidProject/Pods-SeshatOrchidProject.debug.xcconfig"; sourceTree = "<group>"; };
+		4AEB0DC17EA73718E0B44600 /* Pods-SeshatOrchidProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeshatOrchidProject.release.xcconfig"; path = "Target Support Files/Pods-SeshatOrchidProject/Pods-SeshatOrchidProject.release.xcconfig"; sourceTree = "<group>"; };
+		571D8634DA3B47D500580594 /* Pods_SeshatOrchidProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeshatOrchidProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D18CAA267CE1670042A20A /* SeshatOrchidProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeshatOrchidProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D18CAD267CE1670042A20A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88D18CAF267CE1670042A20A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +37,15 @@
 		88D18CB6267CE1680042A20A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88D18CB9267CE1680042A20A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88D18CBB267CE1680042A20A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88D18CC1267CE7B60042A20A /* PoemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemsViewController.swift; sourceTree = "<group>"; };
+		88D18CC3267CE7CD0042A20A /* StoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewController.swift; sourceTree = "<group>"; };
+		88D18CC7267CE88A0042A20A /* PerformancesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformancesViewController.swift; sourceTree = "<group>"; };
+		88D18CCA267CE93B0042A20A /* PoemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoemView.swift; sourceTree = "<group>"; };
+		88D18CCB267CE93B0042A20A /* StoriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
+		88D18CCC267CE93B0042A20A /* PoemsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoemsView.swift; sourceTree = "<group>"; };
+		88D18CCD267CE93B0042A20A /* StoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		88D18CCE267CE93B0042A20A /* PerformancesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformancesView.swift; sourceTree = "<group>"; };
+		88D18CD4267CE9520042A20A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E9E672AA5DCAD3B24ED6AB /* Pods_SeshatOrchidProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C0865CA9A5DBD36592E02A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				571D8634DA3B47D500580594 /* Pods_SeshatOrchidProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		88D18CA1267CE1670042A20A = {
 			isa = PBXGroup;
 			children = (
 				88D18CAC267CE1670042A20A /* SeshatOrchidProject */,
 				88D18CAB267CE1670042A20A /* Products */,
+				C156633212E6D46C5401FB35 /* Pods */,
+				2C0865CA9A5DBD36592E02A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +91,49 @@
 			children = (
 				88D18CAD267CE1670042A20A /* AppDelegate.swift */,
 				88D18CAF267CE1670042A20A /* SceneDelegate.swift */,
-				88D18CB1267CE1670042A20A /* ViewController.swift */,
+				88D18CC9267CE93B0042A20A /* Views */,
+				88D18CD6267CED640042A20A /* Controllers */,
 				88D18CB3267CE1670042A20A /* Main.storyboard */,
 				88D18CB6267CE1680042A20A /* Assets.xcassets */,
 				88D18CB8267CE1680042A20A /* LaunchScreen.storyboard */,
+				88D18CD4267CE9520042A20A /* GoogleService-Info.plist */,
 				88D18CBB267CE1680042A20A /* Info.plist */,
 			);
 			path = SeshatOrchidProject;
+			sourceTree = "<group>";
+		};
+		88D18CC9267CE93B0042A20A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88D18CCA267CE93B0042A20A /* PoemView.swift */,
+				88D18CCB267CE93B0042A20A /* StoriesView.swift */,
+				88D18CCC267CE93B0042A20A /* PoemsView.swift */,
+				88D18CCD267CE93B0042A20A /* StoryView.swift */,
+				88D18CCE267CE93B0042A20A /* PerformancesView.swift */,
+			);
+			name = Views;
+			path = ../../SeshatOrchid/SeshatOrchid/Views;
+			sourceTree = "<group>";
+		};
+		88D18CD6267CED640042A20A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88D18CB1267CE1670042A20A /* ViewController.swift */,
+				88D18CC1267CE7B60042A20A /* PoemsViewController.swift */,
+				88D18CC3267CE7CD0042A20A /* StoriesViewController.swift */,
+				88D18CC7267CE88A0042A20A /* PerformancesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C156633212E6D46C5401FB35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FA82E1B11B87406C8F98434 /* Pods-SeshatOrchidProject.debug.xcconfig */,
+				4AEB0DC17EA73718E0B44600 /* Pods-SeshatOrchidProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88D18CBE267CE1680042A20A /* Build configuration list for PBXNativeTarget "SeshatOrchidProject" */;
 			buildPhases = (
+				E56F5AC968A74E0F155B6A2E /* [CP] Check Pods Manifest.lock */,
 				88D18CA6267CE1670042A20A /* Sources */,
 				88D18CA7267CE1670042A20A /* Frameworks */,
 				88D18CA8267CE1670042A20A /* Resources */,
+				3E53FCE206E4F878738910FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88D18CBA267CE1680042A20A /* LaunchScreen.storyboard in Resources */,
+				88D18CD5267CE9530042A20A /* GoogleService-Info.plist in Resources */,
 				88D18CB7267CE1680042A20A /* Assets.xcassets in Resources */,
 				88D18CB5267CE1670042A20A /* Main.storyboard in Resources */,
 			);
@@ -132,14 +204,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E53FCE206E4F878738910FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeshatOrchidProject/Pods-SeshatOrchidProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeshatOrchidProject/Pods-SeshatOrchidProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeshatOrchidProject/Pods-SeshatOrchidProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E56F5AC968A74E0F155B6A2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeshatOrchidProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		88D18CA6267CE1670042A20A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D18CD2267CE93B0042A20A /* StoryView.swift in Sources */,
+				88D18CD1267CE93B0042A20A /* PoemsView.swift in Sources */,
+				88D18CD3267CE93B0042A20A /* PerformancesView.swift in Sources */,
+				88D18CD0267CE93B0042A20A /* StoriesView.swift in Sources */,
 				88D18CB2267CE1670042A20A /* ViewController.swift in Sources */,
+				88D18CCF267CE93B0042A20A /* PoemView.swift in Sources */,
 				88D18CAE267CE1670042A20A /* AppDelegate.swift in Sources */,
 				88D18CB0267CE1670042A20A /* SceneDelegate.swift in Sources */,
+				88D18CC2267CE7B60042A20A /* PoemsViewController.swift in Sources */,
+				88D18CC8267CE88A0042A20A /* PerformancesViewController.swift in Sources */,
+				88D18CC4267CE7CD0042A20A /* StoriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +405,7 @@
 		};
 		88D18CBF267CE1680042A20A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA82E1B11B87406C8F98434 /* Pods-SeshatOrchidProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +424,7 @@
 		};
 		88D18CC0267CE1680042A20A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AEB0DC17EA73718E0B44600 /* Pods-SeshatOrchidProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -1,0 +1,6 @@
+framework module Pods_SeshatOrchidProject {
+  umbrella header "Pods-SeshatOrchidProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
