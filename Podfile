@@ -6,7 +6,7 @@ target 'SeshatOrchidProject' do
   use_frameworks!
 
   # Pods for SeshatOrchidProject
+  
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
-
 end

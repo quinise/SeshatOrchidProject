@@ -9,26 +9,12 @@ import UIKit
 import SwiftUI
 
 class ViewController: UITabBarController, UITabBarControllerDelegate {
-    let poemsView = UIHostingController(rootView: PoemsView())
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //Assign self for delegate for that ViewController can respond to UITabBarControllerDelegate methods
         self.delegate = self
-        addChild(poemsView)
-        view.addSubview(poemsView.view)
-        setupConstraints()
-        
-    }
-    
-    fileprivate func setupConstraints() {
-        poemsView.view.translatesAutoresizingMaskIntoConstraints = false
-        poemsView.view.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        poemsView.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        poemsView.view.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        poemsView.view.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-
     }
     
     override func viewWillAppear(_ animated: Bool) {

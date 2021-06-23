@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0FC43E26-0953-493F-BDC7-4D66BBF0CF10"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "410C9237-1B14-4908-9BA5-1AD849F11306"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SeshatOrchid/SeshatOrchid/Views/PoemsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "PoemsView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "410C9237-1B14-4908-9BA5-1AD849F11306 - c8166cacb084f4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of SeshatOrchidProject.PoemsView.poems : (SeshatOrchidProject.ViewController) -&gt; () -&gt; ()"
+                  moduleName = "SeshatOrchidProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/incito/Desktop/SeshatOrchid/SeshatOrchid/Views/PoemsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "410C9237-1B14-4908-9BA5-1AD849F11306 - 1d6c211468e52cea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #2 () -&gt; () in implicit closure #1 (SeshatOrchidProject.ViewController) -&gt; () -&gt; () in variable initialization expression of SeshatOrchidProject.PoemsView._poems : SwiftUI.State&lt;(SeshatOrchidProject.ViewController) -&gt; () -&gt; ()&gt;"
+                  moduleName = "SeshatOrchidProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/incito/Desktop/SeshatOrchid/SeshatOrchid/Views/PoemsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  uuid = "410C9237-1B14-4908-9BA5-1AD849F11306 - bf9bb200f4e662b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SeshatOrchidProject.PoemsView.init() -&gt; SeshatOrchidProject.PoemsView"
+                  moduleName = "SeshatOrchidProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/incito/Desktop/SeshatOrchid/SeshatOrchid/Views/PoemsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DF880A95-2B0A-4AC6-BA8D-9E9010CBE524"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SeshatOrchidProject/Models/Poem.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8D5CC627-2897-49AB-AED9-9A6C03A0F6C0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SeshatOrchidProject/DB_Manager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "getPoems()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
