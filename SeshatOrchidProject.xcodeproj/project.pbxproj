@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		884712C7268438E9006C3872 /* PerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884712C6268438E9006C3872 /* PerformanceView.swift */; };
+		8879A2D22683ED2100DF2702 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8879A2D12683ED2100DF2702 /* HeaderView.swift */; };
+		8879A2D42683FCFE00DF2702 /* IconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8879A2D32683FCFE00DF2702 /* IconModel.swift */; };
 		88C5AD8E267E0A9800983911 /* PoemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C5AD8D267E0A9800983911 /* PoemRepository.swift */; };
 		88C5AD91267E0B7E00983911 /* PoemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C5AD90267E0B7E00983911 /* PoemModel.swift */; };
 		88D18CAE267CE1670042A20A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CAD267CE1670042A20A /* AppDelegate.swift */; };
@@ -33,6 +36,9 @@
 		1FA82E1B11B87406C8F98434 /* Pods-SeshatOrchidProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeshatOrchidProject.debug.xcconfig"; path = "Target Support Files/Pods-SeshatOrchidProject/Pods-SeshatOrchidProject.debug.xcconfig"; sourceTree = "<group>"; };
 		4AEB0DC17EA73718E0B44600 /* Pods-SeshatOrchidProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeshatOrchidProject.release.xcconfig"; path = "Target Support Files/Pods-SeshatOrchidProject/Pods-SeshatOrchidProject.release.xcconfig"; sourceTree = "<group>"; };
 		571D8634DA3B47D500580594 /* Pods_SeshatOrchidProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeshatOrchidProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		884712C6268438E9006C3872 /* PerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceView.swift; sourceTree = "<group>"; };
+		8879A2D12683ED2100DF2702 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		8879A2D32683FCFE00DF2702 /* IconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IconModel.swift; path = SeshatOrchidProject/IconModel.swift; sourceTree = SOURCE_ROOT; };
 		88C5AD8D267E0A9800983911 /* PoemRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemRepository.swift; sourceTree = "<group>"; };
 		88C5AD90267E0B7E00983911 /* PoemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemModel.swift; sourceTree = "<group>"; };
 		88D18CAA267CE1670042A20A /* SeshatOrchidProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeshatOrchidProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,8 +133,10 @@
 				88D18CCA267CE93B0042A20A /* PoemView.swift */,
 				88D18CCB267CE93B0042A20A /* StoriesView.swift */,
 				88D18CCC267CE93B0042A20A /* PoemsView.swift */,
+				8879A2D12683ED2100DF2702 /* HeaderView.swift */,
 				88D18CCD267CE93B0042A20A /* StoryView.swift */,
 				88D18CCE267CE93B0042A20A /* PerformancesView.swift */,
+				884712C6268438E9006C3872 /* PerformanceView.swift */,
 			);
 			name = Views;
 			path = ../../SeshatOrchid/SeshatOrchid/Views;
@@ -149,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				88C5AD90267E0B7E00983911 /* PoemModel.swift */,
+				8879A2D32683FCFE00DF2702 /* IconModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -289,8 +298,10 @@
 				88D18CD2267CE93B0042A20A /* StoryView.swift in Sources */,
 				88D18CD1267CE93B0042A20A /* PoemsView.swift in Sources */,
 				88D18CD3267CE93B0042A20A /* PerformancesView.swift in Sources */,
+				884712C7268438E9006C3872 /* PerformanceView.swift in Sources */,
 				88D18CD0267CE93B0042A20A /* StoriesView.swift in Sources */,
 				88C5AD91267E0B7E00983911 /* PoemModel.swift in Sources */,
+				8879A2D42683FCFE00DF2702 /* IconModel.swift in Sources */,
 				88EA0820267E113900AB0152 /* PoemListViewModel.swift in Sources */,
 				88C5AD8E267E0A9800983911 /* PoemRepository.swift in Sources */,
 				88D18CB2267CE1670042A20A /* ViewController.swift in Sources */,
@@ -301,6 +312,7 @@
 				88D18CC8267CE88A0042A20A /* PerformancesViewController.swift in Sources */,
 				88EA0822267E14A800AB0152 /* PoemViewModel.swift in Sources */,
 				88D18CC4267CE7CD0042A20A /* StoriesViewController.swift in Sources */,
+				8879A2D22683ED2100DF2702 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
