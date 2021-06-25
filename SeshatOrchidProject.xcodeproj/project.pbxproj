@@ -11,7 +11,7 @@
 		8879A2D22683ED2100DF2702 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8879A2D12683ED2100DF2702 /* HeaderView.swift */; };
 		8879A2D42683FCFE00DF2702 /* IconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8879A2D32683FCFE00DF2702 /* IconModel.swift */; };
 		88C5AD8E267E0A9800983911 /* PoemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C5AD8D267E0A9800983911 /* PoemRepository.swift */; };
-		88C5AD91267E0B7E00983911 /* PoemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C5AD90267E0B7E00983911 /* PoemModel.swift */; };
+		88C5AD91267E0B7E00983911 /* Poem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C5AD90267E0B7E00983911 /* Poem.swift */; };
 		88D18CAE267CE1670042A20A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CAD267CE1670042A20A /* AppDelegate.swift */; };
 		88D18CB0267CE1670042A20A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CAF267CE1670042A20A /* SceneDelegate.swift */; };
 		88D18CB2267CE1670042A20A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CB1267CE1670042A20A /* ViewController.swift */; };
@@ -40,7 +40,7 @@
 		8879A2D12683ED2100DF2702 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		8879A2D32683FCFE00DF2702 /* IconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IconModel.swift; path = SeshatOrchidProject/IconModel.swift; sourceTree = SOURCE_ROOT; };
 		88C5AD8D267E0A9800983911 /* PoemRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemRepository.swift; sourceTree = "<group>"; };
-		88C5AD90267E0B7E00983911 /* PoemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemModel.swift; sourceTree = "<group>"; };
+		88C5AD90267E0B7E00983911 /* Poem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poem.swift; sourceTree = "<group>"; };
 		88D18CAA267CE1670042A20A /* SeshatOrchidProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeshatOrchidProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D18CAD267CE1670042A20A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88D18CAF267CE1670042A20A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 		88EA081D267E10DC00AB0152 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				88C5AD90267E0B7E00983911 /* PoemModel.swift */,
+				88C5AD90267E0B7E00983911 /* Poem.swift */,
 				8879A2D32683FCFE00DF2702 /* IconModel.swift */,
 			);
 			path = Models;
@@ -300,7 +300,7 @@
 				88D18CD3267CE93B0042A20A /* PerformancesView.swift in Sources */,
 				884712C7268438E9006C3872 /* PerformanceView.swift in Sources */,
 				88D18CD0267CE93B0042A20A /* StoriesView.swift in Sources */,
-				88C5AD91267E0B7E00983911 /* PoemModel.swift in Sources */,
+				88C5AD91267E0B7E00983911 /* Poem.swift in Sources */,
 				8879A2D42683FCFE00DF2702 /* IconModel.swift in Sources */,
 				88EA0820267E113900AB0152 /* PoemListViewModel.swift in Sources */,
 				88C5AD8E267E0A9800983911 /* PoemRepository.swift in Sources */,
