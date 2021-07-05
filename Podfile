@@ -7,6 +7,8 @@ target 'SeshatOrchidProject' do
 
   # Pods for SeshatOrchidProject
   
-  pod 'Firebase/Core'
-  pod 'Firebase/Firestore'
+#  pod 'Firebase/Core'
+#  pod 'Firebase/Firestore'
+  pod 'SQLite.swift', '~> 0.12.0'
+
 end

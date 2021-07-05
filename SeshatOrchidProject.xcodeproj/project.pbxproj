@@ -10,8 +10,8 @@
 		884712C7268438E9006C3872 /* PerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884712C6268438E9006C3872 /* PerformanceView.swift */; };
 		8879A2D22683ED2100DF2702 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8879A2D12683ED2100DF2702 /* HeaderView.swift */; };
 		8879A2D42683FCFE00DF2702 /* IconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8879A2D32683FCFE00DF2702 /* IconModel.swift */; };
+		888B3114269369C800DB8365 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B3113269369C800DB8365 /* DBManager.swift */; };
 		88C5AD8E267E0A9800983911 /* PoemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C5AD8D267E0A9800983911 /* PoemRepository.swift */; };
-		88C5AD91267E0B7E00983911 /* Poem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C5AD90267E0B7E00983911 /* Poem.swift */; };
 		88D18CAE267CE1670042A20A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CAD267CE1670042A20A /* AppDelegate.swift */; };
 		88D18CB0267CE1670042A20A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CAF267CE1670042A20A /* SceneDelegate.swift */; };
 		88D18CB2267CE1670042A20A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CB1267CE1670042A20A /* ViewController.swift */; };
@@ -27,8 +27,7 @@
 		88D18CD2267CE93B0042A20A /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CCD267CE93B0042A20A /* StoryView.swift */; };
 		88D18CD3267CE93B0042A20A /* PerformancesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CCE267CE93B0042A20A /* PerformancesView.swift */; };
 		88D18CD5267CE9530042A20A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88D18CD4267CE9520042A20A /* GoogleService-Info.plist */; };
-		88EA0820267E113900AB0152 /* PoemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EA081F267E113900AB0152 /* PoemListViewModel.swift */; };
-		88EA0822267E14A800AB0152 /* PoemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EA0821267E14A800AB0152 /* PoemViewModel.swift */; };
+		88E41A6C268B55DF001FFD7D /* Poem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E41A6B268B55DF001FFD7D /* Poem.swift */; };
 		D1E9E672AA5DCAD3B24ED6AB /* Pods_SeshatOrchidProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571D8634DA3B47D500580594 /* Pods_SeshatOrchidProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +38,8 @@
 		884712C6268438E9006C3872 /* PerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceView.swift; sourceTree = "<group>"; };
 		8879A2D12683ED2100DF2702 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		8879A2D32683FCFE00DF2702 /* IconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IconModel.swift; path = SeshatOrchidProject/IconModel.swift; sourceTree = SOURCE_ROOT; };
+		888B3113269369C800DB8365 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		88C5AD8D267E0A9800983911 /* PoemRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemRepository.swift; sourceTree = "<group>"; };
-		88C5AD90267E0B7E00983911 /* Poem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poem.swift; sourceTree = "<group>"; };
 		88D18CAA267CE1670042A20A /* SeshatOrchidProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeshatOrchidProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D18CAD267CE1670042A20A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88D18CAF267CE1670042A20A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,8 +57,7 @@
 		88D18CCD267CE93B0042A20A /* StoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		88D18CCE267CE93B0042A20A /* PerformancesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformancesView.swift; sourceTree = "<group>"; };
 		88D18CD4267CE9520042A20A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		88EA081F267E113900AB0152 /* PoemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemListViewModel.swift; sourceTree = "<group>"; };
-		88EA0821267E14A800AB0152 /* PoemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemViewModel.swift; sourceTree = "<group>"; };
+		88E41A6B268B55DF001FFD7D /* Poem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Poem.swift; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Poem.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				88D18CAD267CE1670042A20A /* AppDelegate.swift */,
+				888B3113269369C800DB8365 /* DBManager.swift */,
 				88D18CAF267CE1670042A20A /* SceneDelegate.swift */,
 				88EA081E267E10F100AB0152 /* ViewModels */,
 				88EA081D267E10DC00AB0152 /* Models */,
@@ -156,7 +155,7 @@
 		88EA081D267E10DC00AB0152 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				88C5AD90267E0B7E00983911 /* Poem.swift */,
+				88E41A6B268B55DF001FFD7D /* Poem.swift */,
 				8879A2D32683FCFE00DF2702 /* IconModel.swift */,
 			);
 			path = Models;
@@ -165,8 +164,6 @@
 		88EA081E267E10F100AB0152 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				88EA081F267E113900AB0152 /* PoemListViewModel.swift */,
-				88EA0821267E14A800AB0152 /* PoemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -300,17 +297,16 @@
 				88D18CD3267CE93B0042A20A /* PerformancesView.swift in Sources */,
 				884712C7268438E9006C3872 /* PerformanceView.swift in Sources */,
 				88D18CD0267CE93B0042A20A /* StoriesView.swift in Sources */,
-				88C5AD91267E0B7E00983911 /* Poem.swift in Sources */,
 				8879A2D42683FCFE00DF2702 /* IconModel.swift in Sources */,
-				88EA0820267E113900AB0152 /* PoemListViewModel.swift in Sources */,
 				88C5AD8E267E0A9800983911 /* PoemRepository.swift in Sources */,
 				88D18CB2267CE1670042A20A /* ViewController.swift in Sources */,
 				88D18CCF267CE93B0042A20A /* PoemView.swift in Sources */,
 				88D18CAE267CE1670042A20A /* AppDelegate.swift in Sources */,
+				88E41A6C268B55DF001FFD7D /* Poem.swift in Sources */,
+				888B3114269369C800DB8365 /* DBManager.swift in Sources */,
 				88D18CB0267CE1670042A20A /* SceneDelegate.swift in Sources */,
 				88D18CC2267CE7B60042A20A /* PoemsViewController.swift in Sources */,
 				88D18CC8267CE88A0042A20A /* PerformancesViewController.swift in Sources */,
-				88EA0822267E14A800AB0152 /* PoemViewModel.swift in Sources */,
 				88D18CC4267CE7CD0042A20A /* StoriesViewController.swift in Sources */,
 				8879A2D22683ED2100DF2702 /* HeaderView.swift in Sources */,
 			);
