@@ -7,12 +7,14 @@
 
 import Foundation
 import SQLite
+
 // how do I close the connection to the database
 
 class DBManager {
     private var db: Connection!
     private var poems: Table!
     private var stories: Table!
+    private var performances: Table!
     
     private var id: Expression<Int64>!
     private var title: Expression<String>!
@@ -20,26 +22,40 @@ class DBManager {
     private var poemPicture: Expression<String>!
     private var tags: Expression<String>!
     
+    // ToDo: make these not optional
     private var storyId: Expression<Int64>!
-    private var storyTitle: Expression<String>!
-    private var storyText: Expression<String>!
-    private var storyTags: Expression<String>!
+    private var storyTitle: Expression<String?>!
+    private var storyText: Expression<String?>!
+    private var storyTags: Expression<String?>!
+    
+    // ToDo: make these not optional
+    private var performanceId: Expression<Int64>!
+    private var performanceTitle: Expression<String?>!
+    private var performanceLocation: Expression<String?>!
+    private var performanceTags: Expression<String?>!
     
     init()  {
         do {
             let path: String = "/Users/incito/Desktop/site_content.db"
             db = try Connection("\(path)")
-            
-            poems = Table("poems")
+            print("about to use the poems table")
 
+            poems = Table("poems")
+            stories = Table("stories")
+            performances = Table("performances")
+
+            print("used the poems table about to create columns")
+            
+            // create poems table
+            
             id = Expression<Int64>("id")
             title = Expression<String>("title")
             poemText = Expression<String>("poemText")
             poemPicture = Expression<String>("poemPicture")
             tags = Expression<String>("tags")
+            print("created poems columns, creating table if not already")
 
-            if (!UserDefaults.standard.bool(forKey: "is_db_created")) {
-                try db.run(poems.create { (t) in
+                try db.run(poems.create(ifNotExists: true) { (t) in
                     t.column(id, primaryKey: true)
                     t.column(title)
                     t.column(poemText, unique: true)
@@ -47,27 +63,46 @@ class DBManager {
                     t.column(tags)
                 })
 
-                UserDefaults.standard.bool(forKey: "is_db_created")
-             }
+                print("before using the table stories")
+                stories = Table("stories")
+                print("after using the table stories")
             
-//            stories = Table("stories")
-//            
-//            storyId = Expression<Int64>("storyId")
-//            storyTitle = Expression<String>("storyTitle")
-//            storyText = Expression<String>("storyText")
-//            storyTags = Expression<String>("storyTags")
-//            
-//            if (!UserDefaults.standard.bool(forKey: "is_db_created")) {
-//                try db.run(stories.create { (t) in
-//                    t.column(storyId, primaryKey: true)
-//                    t.column(storyTitle)
-//                    t.column(storyText, unique: true)
-//                    t.column(storyTags)
-//                })
-//            }
-//            
+                // Create stories table
+            
+                storyId = Expression<Int64>("storyId")
+                storyTitle = Expression<String?>("storyTitle")
+                storyText = Expression<String?>("storyText")
+                storyTags = Expression<String?>("storyTags")
+                
+                print("about to create stories table")
+
+                try db.run(stories.create(ifNotExists: true) { (t) in
+                    t.column(storyId, primaryKey: true)
+                    t.column(storyTitle)
+                    t.column(storyText, unique: true)
+                    t.column(storyTags)
+                })
+            
+                // Create performances table
+            
+                performanceId = Expression<Int64>("performanceId")
+                performanceTitle = Expression<String?>("performanceTitle")
+                performanceLocation = Expression<String?>("performanceLocation")
+                performanceTags = Expression<String?>("performanceTags")
+                
+                print("about to create performance table")
+
+                try! db.run(performances.create(ifNotExists: true) { (t) in
+                    t.column(performanceId, primaryKey: true)
+                    t.column(performanceTitle)
+                    t.column(performanceLocation, unique: true)
+                    t.column(performanceTags)
+                })
+            print("db.run(s) completed")
+
+                
         } catch {
-            print("create poems table", error.localizedDescription)
+            print("create tables", error.localizedDescription)
         }
         
     }
@@ -124,5 +159,28 @@ class DBManager {
         }
         
       return storyModels
+    }
+    
+    public func getPerformances() -> [Performance] {
+        var performanceModels: [Performance] = []
+        
+        performances = performances.order(performanceId.desc)
+        
+        do {
+            for performance in try db.prepare(performances) {
+                let performanceModel: Performance = Performance()
+                
+                performanceModel.performanceId = performance[performanceId]
+                performanceModel.performanceTitle  = performance[performanceTitle]
+                performanceModel.performanceLocation = performance[performanceLocation]
+                performanceModel.performanceTags = performance[performanceTags]
+                
+                performanceModels.append(performanceModel)
+            }
+        } catch {
+            print("getPerformance", error.localizedDescription)
+        }
+
+      return performanceModels
     }
 }
