@@ -17,5 +17,5 @@ struct IconModel: Codable, Hashable, Identifiable {
         name.replacingOccurrences(of: " ", with: "").lowercased()
     }
     
-    static let icons = [IconModel(id: UUID(), name: "TwitterLogo", location: "Desktop", destination: "https://twitter.com/"), IconModel(id: UUID(), name: "instagramlogo", location: "Desktop", destination: "https://www.instagram.com/"), IconModel(id: UUID(), name: "facebooklogo", location: "Desktop", destination: "https://www.facebook.com/"), IconModel(id: UUID(), name: "udemylogo", location: "Desktop", destination: "https://www.udemy.com/"), IconModel(id: UUID(), name: "bloglogo", location: "Desktop", destination: "https://seshatorchid.blog/")]
+    static let icons = [IconModel(id: UUID(), name: "twitter-logo", location: "Desktop", destination: "https://twitter.com/"), IconModel(id: UUID(), name: "instagram-logo", location: "Desktop", destination: "https://www.instagram.com/"), IconModel(id: UUID(), name: "facebook-logo", location: "Desktop", destination: "https://www.facebook.com/"), IconModel(id: UUID(), name: "udemy-logo", location: "Desktop", destination: "https://www.udemy.com/"), IconModel(id: UUID(), name: "blog-logo", location: "Desktop", destination: "https://seshatorchid.blog/")]
 }
