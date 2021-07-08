@@ -4,6 +4,8 @@
 //
 //  Created by Devin Ercolano on 7/6/21.
 //
+//  Model for stories
+//
 
 import Foundation
 

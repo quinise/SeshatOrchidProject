@@ -4,12 +4,13 @@
 //
 //  Created by Devin Ercolano on 7/5/21.
 //
+//  Database Manager: opens db connection, creates db and tables, getData
+//
 
 import Foundation
 import SQLite
 
 // how do I close the connection to the database
-
 class DBManager {
     private var db: Connection!
     private var poems: Table!
@@ -38,13 +39,10 @@ class DBManager {
         do {
             let path: String = "/Users/incito/Desktop/site_content.db"
             db = try Connection("\(path)")
-            print("about to use the poems table")
 
             poems = Table("poems")
             stories = Table("stories")
             performances = Table("performances")
-
-            print("used the poems table about to create columns")
             
             // create poems table
             
@@ -53,7 +51,6 @@ class DBManager {
             poemText = Expression<String>("poemText")
             poemPicture = Expression<String>("poemPicture")
             tags = Expression<String>("tags")
-            print("created poems columns, creating table if not already")
 
                 try db.run(poems.create(ifNotExists: true) { (t) in
                     t.column(id, primaryKey: true)
@@ -63,9 +60,7 @@ class DBManager {
                     t.column(tags)
                 })
 
-                print("before using the table stories")
                 stories = Table("stories")
-                print("after using the table stories")
             
                 // Create stories table
             
@@ -74,8 +69,6 @@ class DBManager {
                 storyText = Expression<String?>("storyText")
                 storyTags = Expression<String?>("storyTags")
                 
-                print("about to create stories table")
-
                 try db.run(stories.create(ifNotExists: true) { (t) in
                     t.column(storyId, primaryKey: true)
                     t.column(storyTitle)
@@ -90,16 +83,12 @@ class DBManager {
                 performanceLocation = Expression<String?>("performanceLocation")
                 performanceTags = Expression<String?>("performanceTags")
                 
-                print("about to create performance table")
-
                 try! db.run(performances.create(ifNotExists: true) { (t) in
                     t.column(performanceId, primaryKey: true)
                     t.column(performanceTitle)
                     t.column(performanceLocation, unique: true)
                     t.column(performanceTags)
                 })
-            print("db.run(s) completed")
-
                 
         } catch {
             print("create tables", error.localizedDescription)
@@ -132,27 +121,20 @@ class DBManager {
     
     public func getStories() -> [Story] {
         var storyModels: [Story] = []
-        print("just made story models array in getStories")
         
         stories = stories.order(storyId.desc)
-        print("just made table be in decending order")
         
         do {
             for story in try db.prepare(stories) {
-                print("in for loop")
 
                 let storyModel: Story = Story()
-                print("declared storyModel")
 
                 storyModel.storyId = story[storyId]
                 storyModel.storyTitle  = story[storyTitle]
                 storyModel.storyText = story[storyText]
                 storyModel.storyTags = story[storyTags]
-                print("assigned uncomming story to storyModel")
 
                 storyModels.append(storyModel)
-                print("appended storyModels array")
-
             }
         } catch {
             print("getStories", error.localizedDescription)

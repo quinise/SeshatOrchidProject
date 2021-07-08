@@ -2,6 +2,9 @@
 //
 //  Created by Devin Ercolano on 6/19/21.
 //
+//  Model for Poems
+//
+
 import Foundation
 
 class Poem: Identifiable {
