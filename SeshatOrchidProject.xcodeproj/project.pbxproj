@@ -32,6 +32,8 @@
 		88D18CD2267CE93B0042A20A /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CCD267CE93B0042A20A /* StoryView.swift */; };
 		88D18CD3267CE93B0042A20A /* PerformancesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CCE267CE93B0042A20A /* PerformancesView.swift */; };
 		88D18CD5267CE9530042A20A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88D18CD4267CE9520042A20A /* GoogleService-Info.plist */; };
+		88DB3D4B269E070500995B79 /* EventsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DB3D4A269E070500995B79 /* EventsDetailView.swift */; };
+		88DB3D4D269E09FB00995B79 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DB3D4C269E09FB00995B79 /* Event.swift */; };
 		D1E9E672AA5DCAD3B24ED6AB /* Pods_SeshatOrchidProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571D8634DA3B47D500580594 /* Pods_SeshatOrchidProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +68,8 @@
 		88D18CCD267CE93B0042A20A /* StoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		88D18CCE267CE93B0042A20A /* PerformancesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformancesView.swift; sourceTree = "<group>"; };
 		88D18CD4267CE9520042A20A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		88DB3D4A269E070500995B79 /* EventsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDetailView.swift; sourceTree = "<group>"; };
+		88DB3D4C269E09FB00995B79 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,7 @@
 				8872EB302695C67C0023C528 /* PoemDetailView.swift */,
 				8872EB3C26961B000023C528 /* PerformancesDetailView.swift */,
 				8879A2D12683ED2100DF2702 /* HeaderView.swift */,
+				88DB3D4A269E070500995B79 /* EventsDetailView.swift */,
 				88D18CCD267CE93B0042A20A /* StoryView.swift */,
 				88D18CCE267CE93B0042A20A /* PerformancesView.swift */,
 				884712C6268438E9006C3872 /* PerformanceView.swift */,
@@ -159,6 +164,7 @@
 				8872EB3A269609900023C528 /* Performance.swift */,
 				8833364F2693890C00B05BA0 /* Poem.swift */,
 				8898506526948D9A0025FB82 /* Story.swift */,
+				88DB3D4C269E09FB00995B79 /* Event.swift */,
 				8879A2D32683FCFE00DF2702 /* IconModel.swift */,
 			);
 			path = Models;
@@ -296,7 +302,9 @@
 				883336502693890C00B05BA0 /* Poem.swift in Sources */,
 				8872EB3B269609900023C528 /* Performance.swift in Sources */,
 				8872EB3D26961B000023C528 /* PerformancesDetailView.swift in Sources */,
+				88DB3D4D269E09FB00995B79 /* Event.swift in Sources */,
 				88D18CD0267CE93B0042A20A /* StoriesView.swift in Sources */,
+				88DB3D4B269E070500995B79 /* EventsDetailView.swift in Sources */,
 				8879A2D42683FCFE00DF2702 /* IconModel.swift in Sources */,
 				88D18CB2267CE1670042A20A /* ViewController.swift in Sources */,
 				88D18CCF267CE93B0042A20A /* PoemView.swift in Sources */,
