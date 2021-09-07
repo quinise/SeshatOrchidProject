@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PerformanceDetailView: View {
+    
     var body: some View {
         NavigationView {
             // search bar view - SearchBar()
@@ -17,9 +18,9 @@ struct PerformanceDetailView: View {
             .navigationTitle("Performance Title")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: HeaderView()) {
-                        Image(systemName: "square.and.arrow.up")
-                    }
+//                    NavigationLink(destination: HeaderView()) {
+//                        Image(systemName: "square.and.arrow.up")
+//                    }
                 }
             }
         }
@@ -27,8 +28,8 @@ struct PerformanceDetailView: View {
 }
 
 
-struct PerformanceDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        PerformanceDetailView()
-    }
-}
+//struct PerformanceDetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PerformanceDetailView()
+//    }
+//}

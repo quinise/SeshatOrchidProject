@@ -1,5 +1,5 @@
 //
-//  PoemView.swift
+//  PoemDetailView.swift
 //  SeshatOrchidProject
 //
 //  Created by Devin Ercolano on 8/29/21.
@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct PoemView: View {
+struct PoemDetailView: View {
+    
     var body: some View {
         NavigationView {
             // search bar view - SearchBar()
@@ -17,9 +18,9 @@ struct PoemView: View {
             .navigationTitle("Poem Title")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: HeaderView()) {
-                        Image(systemName: "square.and.arrow.up")
-                    }
+//                    NavigationLink(destination: HeaderView()) {
+//                        Image(systemName: "square.and.arrow.up")
+//                    }
                 }
             }
         }
@@ -27,8 +28,8 @@ struct PoemView: View {
 }
 
 
-struct PoemView_Previews: PreviewProvider {
-    static var previews: some View {
-        PoemView()
-    }
-}
+//struct PoemDetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PoemDetailView()
+//    }
+//}

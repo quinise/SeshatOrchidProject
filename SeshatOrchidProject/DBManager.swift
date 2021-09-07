@@ -37,7 +37,7 @@ class DBManager {
     
     init()  {
         do {
-            let path: String = "/Users/incito/Desktop/site_content.db"
+            let path: String = "/Users/incito/Desktop/SeshatOrchidProject/site_content.db"
             db = try Connection("\(path)")
 
             poems = Table("poems")

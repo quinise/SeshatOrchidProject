@@ -115,7 +115,7 @@
 				888B3113269369C800DB8365 /* DBManager.swift */,
 				88D18CAF267CE1670042A20A /* SceneDelegate.swift */,
 				88EA081D267E10DC00AB0152 /* Models */,
-				88D3A7F626DC4937001C0522 /* Views - B */,
+				88D3A7F626DC4937001C0522 /* Views */,
 				88D18CD6267CED640042A20A /* Controllers */,
 				88D18CB3267CE1670042A20A /* Main.storyboard */,
 				88D18CB6267CE1680042A20A /* Assets.xcassets */,
@@ -136,7 +136,7 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		88D3A7F626DC4937001C0522 /* Views - B */ = {
+		88D3A7F626DC4937001C0522 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				88D3A7FB26DC49FF001C0522 /* StoriesView.swift */,
@@ -151,7 +151,7 @@
 				88D3A80F26DC4AB9001C0522 /* PoemsView.swift */,
 				88D3A81126DC4AF3001C0522 /* PoemView.swift */,
 			);
-			path = "Views - B";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		88EA081D267E10DC00AB0152 /* Models */ = {
