@@ -153,9 +153,9 @@ class DBManager {
                 let performanceModel: Performance = Performance()
                 
                 performanceModel.performanceId = performance[performanceId]
-                performanceModel.performanceTitle  = performance[performanceTitle]
-                performanceModel.performanceLocation = performance[performanceLocation]
-                performanceModel.performanceTags = performance[performanceTags]
+                performanceModel.performanceTitle  = performance[performanceTitle] ?? ""
+                performanceModel.performanceLocation = performance[performanceLocation] ?? ""
+                performanceModel.performanceTags = performance[performanceTags] ?? ""
                 
                 performanceModels.append(performanceModel)
             }

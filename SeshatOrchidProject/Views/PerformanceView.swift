@@ -6,16 +6,21 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct PerformanceView: View {
-
+    let performance: Performance
+    
     var body: some View {
         NavigationView {
             // search bar view - SearchBar()
+            let url = URL(string: performance.performanceLocation)!
             List {
-               Text("Test")
+                VideoPlayer(player: AVPlayer(url: url))
+                    .scaledToFit()
+                Text(performance.performanceTags )
             }
-            .navigationTitle("Performance Title")
+            .navigationTitle(performance.performanceTitle )
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
 //                    NavigationLink(destination: HeaderView()) {
