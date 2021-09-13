@@ -12,7 +12,6 @@ struct PoemsView: View {
     @State var searchText = ""
     let events: [Event]
     
-
     var body: some View {
         NavigationView {
             VStack {
@@ -59,6 +58,18 @@ struct PoemsView: View {
                     }
                 }
             }
+        }
+        .phoneOnlyStackNavigationView()
+    }
+}
+
+extension View {
+    func phoneOnlyStackNavigationView() -> some View {
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            return
+                AnyView(self.navigationViewStyle(StackNavigationViewStyle()))
+        } else {
+            return AnyView(self)
         }
     }
 }

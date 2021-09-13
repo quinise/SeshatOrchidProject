@@ -28,9 +28,9 @@ struct StoryView: View {
                 }
             }
         }
+        .phoneOnlyStackNavigationView()
     }
 }
-
 
 //struct StoryView_Previews: PreviewProvider {
 //    static var previews: some View {

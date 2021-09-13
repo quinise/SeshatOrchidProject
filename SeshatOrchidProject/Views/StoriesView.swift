@@ -57,9 +57,9 @@ struct StoriesView: View {
                 }
             }
         }
+        .phoneOnlyStackNavigationView()
     }
 }
-
 
 struct StoriesView_Previews: PreviewProvider {
     static var previews: some View {

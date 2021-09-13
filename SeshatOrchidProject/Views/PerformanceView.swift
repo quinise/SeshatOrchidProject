@@ -29,6 +29,7 @@ struct PerformanceView: View {
                 }
             }
         }
+        .phoneOnlyStackNavigationView()
     }
 }
 

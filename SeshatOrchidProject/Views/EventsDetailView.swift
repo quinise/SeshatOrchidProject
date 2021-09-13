@@ -40,6 +40,7 @@ struct EventsDetailView: View {
                 }
             }
         }
+        .phoneOnlyStackNavigationView()
     }
 }
 

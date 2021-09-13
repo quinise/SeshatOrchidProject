@@ -24,8 +24,12 @@ struct SocialsView: View {
             }
             .navigationTitle("Follow Monia")
         }
+        .phoneOnlyStackNavigationView()
     }
 }
+
+
+
 //struct SocialsView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        SocialsView()

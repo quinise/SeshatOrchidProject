@@ -57,9 +57,9 @@ struct PerformancesView: View {
                 }
             }
         }
+        .phoneOnlyStackNavigationView()
     }
 }
-
 
 //struct PerformancesView_Previews: PreviewProvider {
 //    static var previews: some View {

@@ -27,9 +27,9 @@ struct PoemView: View {
                 }
             }
         }
+        .phoneOnlyStackNavigationView()
     }
 }
-
 
 //struct PoemView_Previews: PreviewProvider {
 //    static var previews: some View {
