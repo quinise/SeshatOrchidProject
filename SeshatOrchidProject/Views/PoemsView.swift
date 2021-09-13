@@ -33,13 +33,16 @@ struct PoemsView: View {
                             HStack {
                                 Image(model.thumbnailImage)
                                     .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 100, height: 100)
                                     .clipShape(Circle())
                                     .overlay(Circle().stroke(Color.gray, lineWidth: 2))
-                                    .scaledToFit()
                                 VStack(alignment: .leading) {
                                     Text(model.title)
+                                        .font(.title);
                                     Spacer()
                                     Text(model.tags)
+                                        .italic()
                                 }
                             }
                         }
@@ -51,7 +54,7 @@ struct PoemsView: View {
             .navigationTitle("Poetry")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: HeaderItemView()) {
+                    NavigationLink(destination: SocialsView()) {
                         Image(systemName: "square.and.arrow.up")
                     }
                 }

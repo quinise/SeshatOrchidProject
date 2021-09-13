@@ -34,9 +34,9 @@ struct EventsDetailView: View {
             .navigationTitle("Events")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-//                    NavigationLink(destination: HeaderView()) {
-//                        Image(systemName: "square.and.arrow.up")
-//                    }
+                    NavigationLink(destination: SocialsView()) {
+                        Image(systemName: "square.and.arrow.up")
+                    }
                 }
             }
         }

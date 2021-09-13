@@ -36,8 +36,10 @@ struct PerformancesView: View {
     //                                .scaledToFit()
                                 VStack(alignment: .leading) {
                                     Text(model.performanceTitle)
+                                        .font(.title);
                                     Spacer()
                                     Text(model.performanceTags)
+                                        .italic()
                                 }
                             }
                         }
@@ -49,9 +51,9 @@ struct PerformancesView: View {
             .navigationTitle("Performances")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-//                    NavigationLink(destination: HeaderView()) {
-//                        Image(systemName: "square.and.arrow.up")
-//                    }
+                    NavigationLink(destination: SocialsView()) {
+                        Image(systemName: "square.and.arrow.up")
+                    }
                 }
             }
         }

@@ -23,8 +23,7 @@
 		88D18CC8267CE88A0042A20A /* PerformancesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D18CC7267CE88A0042A20A /* PerformancesViewController.swift */; };
 		88D3A7FC26DC49FF001C0522 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3A7FB26DC49FF001C0522 /* StoriesView.swift */; };
 		88D3A7FE26DC4A0B001C0522 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3A7FD26DC4A0B001C0522 /* SearchBar.swift */; };
-		88D3A80026DC4A1B001C0522 /* PoemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3A7FF26DC4A1B001C0522 /* PoemDetailView.swift */; };
-		88D3A80626DC4A44001C0522 /* HeaderItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3A80526DC4A44001C0522 /* HeaderItemView.swift */; };
+		88D3A80626DC4A44001C0522 /* SocialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3A80526DC4A44001C0522 /* SocialsView.swift */; };
 		88D3A80826DC4A57001C0522 /* EventsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3A80726DC4A57001C0522 /* EventsDetailView.swift */; };
 		88D3A80A26DC4A6B001C0522 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3A80926DC4A6B001C0522 /* StoryView.swift */; };
 		88D3A80C26DC4A7E001C0522 /* PerformancesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3A80B26DC4A7E001C0522 /* PerformancesView.swift */; };
@@ -57,8 +56,7 @@
 		88D18CC7267CE88A0042A20A /* PerformancesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformancesViewController.swift; sourceTree = "<group>"; };
 		88D3A7FB26DC49FF001C0522 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
 		88D3A7FD26DC4A0B001C0522 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		88D3A7FF26DC4A1B001C0522 /* PoemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemDetailView.swift; sourceTree = "<group>"; };
-		88D3A80526DC4A44001C0522 /* HeaderItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderItemView.swift; sourceTree = "<group>"; };
+		88D3A80526DC4A44001C0522 /* SocialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialsView.swift; sourceTree = "<group>"; };
 		88D3A80726DC4A57001C0522 /* EventsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDetailView.swift; sourceTree = "<group>"; };
 		88D3A80926DC4A6B001C0522 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		88D3A80B26DC4A7E001C0522 /* PerformancesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformancesView.swift; sourceTree = "<group>"; };
@@ -137,12 +135,11 @@
 		88D3A7F626DC4937001C0522 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				88D3A80526DC4A44001C0522 /* HeaderItemView.swift */,
+				88D3A80526DC4A44001C0522 /* SocialsView.swift */,
 				88D3A80726DC4A57001C0522 /* EventsDetailView.swift */,
 				88D3A7FD26DC4A0B001C0522 /* SearchBar.swift */,
 				88D3A80F26DC4AB9001C0522 /* PoemsView.swift */,
 				88D3A81126DC4AF3001C0522 /* PoemView.swift */,
-				88D3A7FF26DC4A1B001C0522 /* PoemDetailView.swift */,
 				88D3A7FB26DC49FF001C0522 /* StoriesView.swift */,
 				88D3A80926DC4A6B001C0522 /* StoryView.swift */,
 				88D3A80B26DC4A7E001C0522 /* PerformancesView.swift */,
@@ -301,12 +298,11 @@
 				88D18CB2267CE1670042A20A /* ViewController.swift in Sources */,
 				88D18CAE267CE1670042A20A /* AppDelegate.swift in Sources */,
 				888B3114269369C800DB8365 /* DBManager.swift in Sources */,
-				88D3A80626DC4A44001C0522 /* HeaderItemView.swift in Sources */,
+				88D3A80626DC4A44001C0522 /* SocialsView.swift in Sources */,
 				88D18CB0267CE1670042A20A /* SceneDelegate.swift in Sources */,
 				88D18CC2267CE7B60042A20A /* PoemsViewController.swift in Sources */,
 				88D3A80A26DC4A6B001C0522 /* StoryView.swift in Sources */,
 				88D18CC8267CE88A0042A20A /* PerformancesViewController.swift in Sources */,
-				88D3A80026DC4A1B001C0522 /* PoemDetailView.swift in Sources */,
 				88D18CC4267CE7CD0042A20A /* StoriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

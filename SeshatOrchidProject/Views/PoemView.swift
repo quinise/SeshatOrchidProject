@@ -14,12 +14,14 @@ struct PoemView: View {
         NavigationView {
             List {
                 Text(poem.poemText)
+                    .font(.title);
                 Text(poem.tags)
+                    .italic()
             }
             .navigationTitle(poem.title)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: HeaderItemView()) {
+                    NavigationLink(destination: SocialsView()) {
                         Image(systemName: "square.and.arrow.up")
                     }
                 }

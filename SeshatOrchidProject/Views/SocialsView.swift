@@ -7,35 +7,27 @@
 
 import SwiftUI
 
-struct HeaderItemView: View {
+struct SocialsView: View {
     let items = IconModel.icons
 
     var body: some View {
         NavigationView {
-            // search bar view - SearchBar()
-            VStack {
+            List {
                 ForEach(items, id: \.id, content: { item in
                     Link(destination: URL(string: item.destination)!, label: {
                         Image(item.mainImage)
                         .resizable()
-                        .clipShape(Circle())
-                        .overlay(Circle().stroke(Color.gray, lineWidth: 2))
                         .scaledToFit()
                         .padding()
-                    
-                        VStack(alignment: .leading) {
-                            Text(item.name)
-                                .font(.headline)
-                            Spacer()
-                        }
                     })
                 })
             }
+            .navigationTitle("Follow Monia")
         }
     }
 }
-//struct HeaderItemView_Previews: PreviewProvider {
+//struct SocialsView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        HeaderItemView()
+//        SocialsView()
 //    }
 //}

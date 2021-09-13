@@ -14,14 +14,17 @@ struct StoryView: View {
         NavigationView {
             List {
                 Text(story.storyText)
+                    .font(.title);
+
                 Text(story.storyTags)
+                    .italic()
             }
             .navigationTitle(story.storyTitle)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-//                    NavigationLink(destination: HeaderView()) {
-//                        Image(systemName: "square.and.arrow.up")
-//                    }
+                    NavigationLink(destination: SocialsView()) {
+                        Image(systemName: "square.and.arrow.up")
+                    }
                 }
             }
         }

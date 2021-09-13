@@ -24,11 +24,11 @@ extension IconModel {
     // ToDo: should this be moved?
     static var icons : [IconModel] {
                 [
-                    IconModel(id: UUID(), name: "twitter-logo", location: "Desktop", destination: "https://twitter.com/"),
-                    IconModel(id: UUID(), name: "instagram-logo", location: "Desktop", destination: "https://www.instagram.com/"),
-                    IconModel(id: UUID(), name: "facebook-logo", location: "Desktop", destination: "https://www.facebook.com/"),
-                    IconModel(id: UUID(), name: "udemy-logo", location: "Desktop", destination: "https://www.udemy.com/"),
-                    IconModel(id: UUID(), name: "blog-logo", location: "Desktop", destination: "https://seshatorchid.blog/")
+                    IconModel(id: UUID(), name: "twitter", location: "Desktop", destination: "https://twitter.com/"),
+                    IconModel(id: UUID(), name: "instagram", location: "Desktop", destination: "https://www.instagram.com/"),
+                    IconModel(id: UUID(), name: "facebook", location: "Desktop", destination: "https://www.facebook.com/"),
+                    IconModel(id: UUID(), name: "udemy", location: "Desktop", destination: "https://www.udemy.com/"),
+                    IconModel(id: UUID(), name: "blog", location: "Desktop", destination: "https://seshatorchid.blog/")
                 ]
     }
 }

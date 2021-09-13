@@ -18,13 +18,14 @@ struct PerformanceView: View {
                 VideoPlayer(player: AVPlayer(url: url))
                     .scaledToFit()
                 Text(performance.performanceTags )
+                    .italic()
             }
             .navigationTitle(performance.performanceTitle )
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-//                    NavigationLink(destination: HeaderView()) {
-//                        Image(systemName: "square.and.arrow.up")
-//                    }
+                    NavigationLink(destination: SocialsView()) {
+                        Image(systemName: "square.and.arrow.up")
+                    }
                 }
             }
         }

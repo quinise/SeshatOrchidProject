@@ -36,8 +36,10 @@ struct StoriesView: View {
     //                                .scaledToFit()
                                 VStack(alignment: .leading) {
                                     Text(model.storyTitle)
+                                        .font(.title);
                                     Spacer()
                                     Text(model.storyTags)
+                                        .italic()
                                 }
                             }
                         }
@@ -49,7 +51,7 @@ struct StoriesView: View {
             .navigationTitle("Short Stories")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: HeaderItemView()) {
+                    NavigationLink(destination: SocialsView()) {
                         Image(systemName: "square.and.arrow.up")
                     }
                 }
