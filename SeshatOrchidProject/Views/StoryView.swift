@@ -12,12 +12,11 @@ struct StoryView: View {
     
     var body: some View {
         NavigationView {
-            // search bar view - SearchBar()
             List {
-                Text(story.storyText ?? "")
-                Text(story.storyTags ?? "")
+                Text(story.storyText)
+                Text(story.storyTags)
             }
-            .navigationTitle(story.storyTitle ?? "")
+            .navigationTitle(story.storyTitle)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
 //                    NavigationLink(destination: HeaderView()) {

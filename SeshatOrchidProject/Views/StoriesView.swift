@@ -9,36 +9,49 @@ import SwiftUI
 
 struct StoriesView: View {
     @State var storyModels: [Story] = []
+    @State var searchText = ""
     
     var body: some View {
         NavigationView {
-            // search bar view - SearchBar()
-            HStack {
-                List (self.storyModels) { (model) in
-                    NavigationLink(destination: StoryView(story: model)) {
-                        HStack {
-//                            Image(model.thumbnailImage)
-//                                .resizable()
-//                                .clipShape(Circle())
-//                                .overlay(Circle().stroke(Color.gray, lineWidth: 2))
-//                                .scaledToFit()
-                            VStack(alignment: .leading) {
-                                Text(model.storyTitle ?? "")
-                                Spacer()
-                                Text(model.storyTags ?? "")
+            VStack {
+                SearchBar(text: $searchText)
+                    .padding()
+                // Events bar
+                NavigationLink(destination: EventsDetailView()) {
+                Text("Events")
+                    .font(.title)
+                    .frame(maxWidth: .infinity)
+                    .background(Color.red)
+                    .opacity(0.3)
+                }
+                
+                HStack {
+                    List (self.storyModels.filter({ searchText.isEmpty ? true : $0.storyTitle.contains(searchText) ||  $0.storyTags.contains(searchText)})) { (model) in
+                        NavigationLink(destination: StoryView(story: model)) {
+                            HStack {
+    //                            Image(model.thumbnailImage)
+    //                                .resizable()
+    //                                .clipShape(Circle())
+    //                                .overlay(Circle().stroke(Color.gray, lineWidth: 2))
+    //                                .scaledToFit()
+                                VStack(alignment: .leading) {
+                                    Text(model.storyTitle)
+                                    Spacer()
+                                    Text(model.storyTags)
+                                }
                             }
                         }
                     }
+                    
                 }
-                
             }
             .onAppear(perform: { self.storyModels = DBManager().getStories() })
             .navigationTitle("Short Stories")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-//                    NavigationLink(destination: HeaderView()) {
-//                        Image(systemName: "square.and.arrow.up")
-//                    }
+                    NavigationLink(destination: HeaderItemView()) {
+                        Image(systemName: "square.and.arrow.up")
+                    }
                 }
             }
         }

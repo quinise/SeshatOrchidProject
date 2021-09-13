@@ -8,10 +8,11 @@
 import Foundation
 import UIKit
 import SwiftUI
+let events = Event.events
 
 class PoemsViewController: UIViewController {
 
-    let poemsView = UIHostingController(rootView: PoemsView())
+    let poemsView = UIHostingController(rootView: PoemsView(events: events))
     
     override func viewDidLoad() {
         super.viewDidLoad()

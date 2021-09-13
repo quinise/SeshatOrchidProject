@@ -12,7 +12,6 @@ struct PoemView: View {
     
     var body: some View {
         NavigationView {
-            // search bar view - SearchBar()
             List {
                 Text(poem.poemText)
                 Text(poem.tags)
@@ -20,9 +19,9 @@ struct PoemView: View {
             .navigationTitle(poem.title)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-//                    NavigationLink(destination: HeaderView()) {
-//                        Image(systemName: "square.and.arrow.up")
-//                    }
+                    NavigationLink(destination: HeaderItemView()) {
+                        Image(systemName: "square.and.arrow.up")
+                    }
                 }
             }
         }

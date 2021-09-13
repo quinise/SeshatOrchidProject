@@ -9,23 +9,38 @@ import SwiftUI
 
 struct PoemsView: View {
     @State var poemModels: [Poem] = []
+    @State var searchText = ""
+    let events: [Event]
     
+
     var body: some View {
         NavigationView {
-            // search bar view - SearchBar()
-            HStack {
-                List (self.poemModels) { (model) in
-                    NavigationLink(destination: PoemView(poem: model)) {
-                        HStack {
-                            Image(model.thumbnailImage)
-                                .resizable()
-                                .clipShape(Circle())
-                                .overlay(Circle().stroke(Color.gray, lineWidth: 2))
-                                .scaledToFit()
-                            VStack(alignment: .leading) {
-                                Text(model.title)
-                                Spacer()
-                                Text(model.tags)
+            VStack {
+                // search bar
+                SearchBar(text: $searchText)
+                    .padding()
+                // Events bar
+                NavigationLink(destination: EventsDetailView()) {
+                Text("Events")
+                    .font(.title)
+                    .frame(maxWidth: .infinity)
+                    .background(Color.red)
+                    .opacity(0.3)
+                }
+                HStack {
+                    List (self.poemModels.filter({ searchText.isEmpty ? true : $0.title.contains(searchText) ||  $0.tags.contains(searchText)})) { (model) in
+                        NavigationLink(destination: PoemView(poem: model)) {
+                            HStack {
+                                Image(model.thumbnailImage)
+                                    .resizable()
+                                    .clipShape(Circle())
+                                    .overlay(Circle().stroke(Color.gray, lineWidth: 2))
+                                    .scaledToFit()
+                                VStack(alignment: .leading) {
+                                    Text(model.title)
+                                    Spacer()
+                                    Text(model.tags)
+                                }
                             }
                         }
                     }
@@ -36,9 +51,9 @@ struct PoemsView: View {
             .navigationTitle("Poetry")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-//                    NavigationLink(destination: HeaderView()) {
-//                        Image(systemName: "square.and.arrow.up")
-//                    }
+                    NavigationLink(destination: HeaderItemView()) {
+                        Image(systemName: "square.and.arrow.up")
+                    }
                 }
             }
         }

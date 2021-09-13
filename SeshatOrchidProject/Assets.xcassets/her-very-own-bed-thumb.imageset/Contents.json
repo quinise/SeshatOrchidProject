@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "herveryownbed-thumb.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "herveryownbed-thumb.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },

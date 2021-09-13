@@ -13,7 +13,6 @@ struct PerformanceView: View {
     
     var body: some View {
         NavigationView {
-            // search bar view - SearchBar()
             let url = URL(string: performance.performanceLocation)!
             List {
                 VideoPlayer(player: AVPlayer(url: url))

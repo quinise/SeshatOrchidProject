@@ -8,12 +8,28 @@
 import SwiftUI
 
 struct EventsDetailView: View {
+    let events = Event.events
+    
+    let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        return formatter
+    }()
     
     var body: some View {
         NavigationView {
-            // search bar view - SearchBar()
-            List {
-               Text("Events")
+            VStack {
+                List {
+                    ForEach(events, id: \.id, content: { event in
+                        Image(event.name)
+                            .resizable()
+                            .scaledToFit()
+                        Text(event.name)
+                        Text(event.location)
+                        Text(dateFormatter.string(from: event.date))
+                        Text("$\(event.price)")
+                    })
+                }
             }
             .navigationTitle("Events")
             .toolbar {

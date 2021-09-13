@@ -25,15 +25,15 @@ class DBManager {
     
     // ToDo: make these not optional
     private var storyId: Expression<Int64>!
-    private var storyTitle: Expression<String?>!
-    private var storyText: Expression<String?>!
-    private var storyTags: Expression<String?>!
+    private var storyTitle: Expression<String>!
+    private var storyText: Expression<String>!
+    private var storyTags: Expression<String>!
     
     // ToDo: make these not optional
     private var performanceId: Expression<Int64>!
-    private var performanceTitle: Expression<String?>!
-    private var performanceLocation: Expression<String?>!
-    private var performanceTags: Expression<String?>!
+    private var performanceTitle: Expression<String>!
+    private var performanceLocation: Expression<String>!
+    private var performanceTags: Expression<String>!
     
     init()  {
         do {
@@ -65,9 +65,9 @@ class DBManager {
                 // Create stories table
             
                 storyId = Expression<Int64>("storyId")
-                storyTitle = Expression<String?>("storyTitle")
-                storyText = Expression<String?>("storyText")
-                storyTags = Expression<String?>("storyTags")
+                storyTitle = Expression<String>("storyTitle")
+                storyText = Expression<String>("storyText")
+                storyTags = Expression<String>("storyTags")
                 
                 try db.run(stories.create(ifNotExists: true) { (t) in
                     t.column(storyId, primaryKey: true)
@@ -79,9 +79,9 @@ class DBManager {
                 // Create performances table
             
                 performanceId = Expression<Int64>("performanceId")
-                performanceTitle = Expression<String?>("performanceTitle")
-                performanceLocation = Expression<String?>("performanceLocation")
-                performanceTags = Expression<String?>("performanceTags")
+                performanceTitle = Expression<String>("performanceTitle")
+                performanceLocation = Expression<String>("performanceLocation")
+                performanceTags = Expression<String>("performanceTags")
                 
                 try! db.run(performances.create(ifNotExists: true) { (t) in
                     t.column(performanceId, primaryKey: true)
@@ -153,9 +153,9 @@ class DBManager {
                 let performanceModel: Performance = Performance()
                 
                 performanceModel.performanceId = performance[performanceId]
-                performanceModel.performanceTitle  = performance[performanceTitle] ?? ""
-                performanceModel.performanceLocation = performance[performanceLocation] ?? ""
-                performanceModel.performanceTags = performance[performanceTags] ?? ""
+                performanceModel.performanceTitle  = performance[performanceTitle]
+                performanceModel.performanceLocation = performance[performanceLocation]
+                performanceModel.performanceTags = performance[performanceTags]
                 
                 performanceModels.append(performanceModel)
             }
