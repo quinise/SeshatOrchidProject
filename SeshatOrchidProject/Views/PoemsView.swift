@@ -63,6 +63,7 @@ struct PoemsView: View {
     }
 }
 
+// Facilitates good presentation in landscape mode
 extension View {
     func phoneOnlyStackNavigationView() -> some View {
         if UIDevice.current.userInterfaceIdiom == .phone {

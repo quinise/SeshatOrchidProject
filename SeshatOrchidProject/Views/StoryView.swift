@@ -11,20 +11,18 @@ struct StoryView: View {
     let story: Story
     
     var body: some View {
-        NavigationView {
-            List {
-                Text(story.storyText)
-                    .font(.title);
+        List {
+            Text(story.storyText)
+                .font(.title);
 
-                Text(story.storyTags)
-                    .italic()
-            }
-            .navigationTitle(story.storyTitle)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: SocialsView()) {
-                        Image(systemName: "square.and.arrow.up")
-                    }
+            Text(story.storyTags)
+                .italic()
+        }
+        .navigationTitle(story.storyTitle)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink(destination: SocialsView()) {
+                    Image(systemName: "square.and.arrow.up")
                 }
             }
         }

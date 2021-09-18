@@ -12,20 +12,18 @@ struct PerformanceView: View {
     let performance: Performance
     
     var body: some View {
-        NavigationView {
-            let url = URL(string: performance.performanceLocation)!
-            List {
-                VideoPlayer(player: AVPlayer(url: url))
-                    .scaledToFit()
-                Text(performance.performanceTags )
-                    .italic()
-            }
-            .navigationTitle(performance.performanceTitle )
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: SocialsView()) {
-                        Image(systemName: "square.and.arrow.up")
-                    }
+        let url = URL(string: performance.performanceLocation)!
+        List {
+            VideoPlayer(player: AVPlayer(url: url))
+                .scaledToFit()
+            Text(performance.performanceTags )
+                .italic()
+        }
+        .navigationTitle(performance.performanceTitle )
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink(destination: SocialsView()) {
+                    Image(systemName: "square.and.arrow.up")
                 }
             }
         }

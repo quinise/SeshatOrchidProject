@@ -11,23 +11,21 @@ struct PoemView: View {
     let poem: Poem
     
     var body: some View {
-        NavigationView {
-            List {
-                Text(poem.poemText)
-                    .font(.title);
-                Text(poem.tags)
-                    .italic()
-            }
-            .navigationTitle(poem.title)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: SocialsView()) {
-                        Image(systemName: "square.and.arrow.up")
-                    }
+        List {
+            Text(poem.poemText)
+                .font(.title);
+            Text(poem.tags)
+                .italic()
+        }
+        .navigationTitle(poem.title)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink(destination: SocialsView()) {
+                    Image(systemName: "square.and.arrow.up")
                 }
             }
         }
-        .phoneOnlyStackNavigationView()
+    .phoneOnlyStackNavigationView()
     }
 }
 
