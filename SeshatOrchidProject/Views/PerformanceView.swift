@@ -18,6 +18,7 @@ struct PerformanceView: View {
                 .scaledToFit()
             Text(performance.performanceTags )
                 .italic()
+                .font(.caption)
         }
         .navigationTitle(performance.performanceTitle )
         .toolbar {

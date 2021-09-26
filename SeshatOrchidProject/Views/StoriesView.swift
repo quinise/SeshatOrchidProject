@@ -40,12 +40,15 @@ struct StoriesView: View {
                                     Spacer()
                                     Text(model.storyTags)
                                         .italic()
+                                        .font(.caption)
                                 }
                             }
                         }
                     }
                     
                 }
+                .listStyle(SidebarListStyle())
+                .padding(.bottom, 100)
             }
             .onAppear(perform: { self.storyModels = DBManager().getStories() })
             .navigationTitle("Short Stories")

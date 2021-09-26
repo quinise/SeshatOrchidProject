@@ -11,15 +11,18 @@ struct SocialsView: View {
     let items = IconModel.icons
 
     var body: some View {
-        List {
-            ForEach(items, id: \.id, content: { item in
-                Link(destination: URL(string: item.destination)!, label: {
-                    Image(item.mainImage)
-                    .resizable()
-                    .scaledToFit()
-                    .padding()
+        ScrollView {
+            LazyVStack {
+                ForEach(items, id: \.id, content: { item in
+                    Link(destination: URL(string: item.destination)!, label: {
+                        Image(item.mainImage)
+                        .resizable()
+                        .scaledToFit()
+                        .padding(100)
+
+                    })
                 })
-            })
+            }
         }
         .navigationTitle("Follow Monia")
         .phoneOnlyStackNavigationView()

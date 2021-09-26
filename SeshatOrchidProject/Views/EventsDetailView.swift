@@ -17,26 +17,27 @@ struct EventsDetailView: View {
     }()
     
     var body: some View {
-        NavigationView {
-            VStack {
-                List {
-                    ForEach(events, id: \.id, content: { event in
-                        Image(event.name)
-                            .resizable()
-                            .scaledToFit()
+        HStack(alignment: .center) {
+            List {
+                ForEach(events, id: \.id, content: { event in
+                    Image(event.name)
+                        .resizable()
+                        .scaledToFit()
+                    VStack(alignment: .center) {
                         Text(event.name)
                         Text(event.location)
                         Text(dateFormatter.string(from: event.date))
-                        Text("$\(event.price)")
-                    })
-                }
-            }
-            .navigationTitle("Events")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: SocialsView()) {
-                        Image(systemName: "square.and.arrow.up")
+                        let price: String = String(format: "$%.02f", event.price)
+                        Text("\(price)")
                     }
+                })
+            }
+        }
+        .navigationTitle("Events")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink(destination: SocialsView()) {
+                    Image(systemName: "square.and.arrow.up")
                 }
             }
         }

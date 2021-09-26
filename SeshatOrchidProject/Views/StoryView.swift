@@ -17,6 +17,7 @@ struct StoryView: View {
 
             Text(story.storyTags)
                 .italic()
+                .font(.caption)
         }
         .navigationTitle(story.storyTitle)
         .toolbar {

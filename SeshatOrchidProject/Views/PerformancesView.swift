@@ -40,12 +40,16 @@ struct PerformancesView: View {
                                     Spacer()
                                     Text(model.performanceTags)
                                         .italic()
+                                        .font(.caption)
                                 }
                             }
                         }
                     }
                     
                 }
+                .listStyle(SidebarListStyle())
+                .padding(.bottom, 100)
+
             }
             .onAppear(perform: { self.performancesModels = DBManager().getPerformances()})
             .navigationTitle("Performances")

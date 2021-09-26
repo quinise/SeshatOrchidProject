@@ -15,7 +15,6 @@ struct PoemsView: View {
     var body: some View {
         NavigationView {
             VStack {
-                // search bar
                 SearchBar(text: $searchText)
                     .padding()
                 // Events bar
@@ -42,15 +41,19 @@ struct PoemsView: View {
                                     Spacer()
                                     Text(model.tags)
                                         .italic()
+                                        .font(.caption)
                                 }
                             }
                         }
                     }
                 }
-                
+                .listStyle(SidebarListStyle())
+                .padding(.bottom, 100)
             }
             .onAppear(perform: { self.poemModels = DBManager().getPoems()})
             .navigationTitle("Poetry")
+            // Centers title, minimizes text
+//            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink(destination: SocialsView()) {

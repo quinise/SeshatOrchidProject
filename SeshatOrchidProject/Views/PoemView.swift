@@ -16,6 +16,7 @@ struct PoemView: View {
                 .font(.title);
             Text(poem.tags)
                 .italic()
+                .font(.caption)
         }
         .navigationTitle(poem.title)
         .toolbar {
